@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Check') {
             steps {
-                sh 'node --check multiplication.js'
+                sh 'node --check Multiplication.js'
             }
         }
 
         stage('Run') {
             steps {
-                sh 'node multiplication.js'
+                sh 'node Multiplication.js'
             }
         }
     }
