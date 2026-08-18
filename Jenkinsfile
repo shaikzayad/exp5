@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Compile') {
             steps {
-                sh 'python3 -m py_compile Subraction.py'
+                sh 'python3 -m py_compile Subtraction.py'
             }
         }
 
         stage('Run') {
             steps {
-                sh 'python3 Subraction.py'
+                sh 'python3 Subtraction.py'
             }
         }
     }
