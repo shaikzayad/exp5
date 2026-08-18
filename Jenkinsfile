@@ -2,15 +2,15 @@ pipeline {
     agent any
 
     stages {
-        stage('Compile') {
+        stage('Check') {
             steps {
-                sh 'python3 -m py_compile Subtraction.py'
+                sh 'node --check multiplication.js'
             }
         }
 
         stage('Run') {
             steps {
-                sh 'python3 Subtraction.py'
+                sh 'node multiplication.js'
             }
         }
     }
